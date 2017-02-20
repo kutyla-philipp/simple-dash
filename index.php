@@ -38,14 +38,14 @@
 
 		<div id="links-wrap" class="menu-item bg">
 			<?php
-				echo '<center>';
+				echo '<center><p>';
 				foreach ($config['items'] as $i => $item) {
 					$icon = $item['icon'];
 					$link = str_replace("{{cur}}", get_current_url(), $item['link']);
 
 					echo '<a href="' . $link . '" title="' . $item['alt'] . '"><i class="fa ' . $icon . ' fa-fw"></i></a>';
 				}
-				echo '</center>';
+				echo '</p></center>';
 			?>
 		</div>
 
