@@ -1,6 +1,6 @@
 # simple-homepage
 
-An even simpler Homepage.
+An even simpler, fully responsive Homepage. Ideal for Desktop and mobile usage!
 Based on: https://github.com/thetomester13/homepage
 
 This project uses:
