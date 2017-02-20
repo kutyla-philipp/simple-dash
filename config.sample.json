@@ -1,12 +1,11 @@
 {
-	"title" : "Homepage",
+	"title" : "Your Homepage Title",
 	"credits" : true,
 	"custom_url" : "",
 	"custom_url_selector" : "",
 	"custom_url_headers" : [],
 	"unsplash_client_id" : "Make yourself an Unsplash Account here: https://unsplash.com/developers",
 	"items" : [
-		"items" : [
 		{
 			"alt" : "Facebook",
 			"icon" : "fa-facebook",
