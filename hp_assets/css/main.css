@@ -33,14 +33,14 @@ body.menu-shown #bg-overlay {opacity: 0.3;}
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	
+	padding-bottom: 3px;
 
-	width: -moz-fit-content;
-	width: -webkit-fit-content;
-	height: -moz-fit-content;
-	height: -webkit-fit-content;
+	width: fit-content;
+	height: auto;
 
-	max-width: 90%;
-	max-height: 90%;
+	max-width: 75%;
+	max-height: 85%;
 
 	overflow: auto;
 	display: flex;
