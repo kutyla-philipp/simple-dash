@@ -19,7 +19,7 @@ This project uses:
 Copy the config.sample.json file and rename to config.json. Be sure to update the fields as you see appropriate. You have the option to use the Unsplash API to fetch background images, or use a custom URL and JSON selector. If you choose to use Unsplash, will need to create a developer profile at [Unsplash](https://unsplash.com/) to use the background image functionality properly. 
 
 ## Configure Homepage
-- 'items' => The menu will be in a grid of 3 icons per row on desktop. Insert any link you'd like, or {{cur}} for the current URL of the page. Choose icons from [Font Awesome](http://fontawesome.io/icons/)
+- 'items' => The menu will scale to the amount of items you want to display. Insert any link you'd like, or {{cur}} for the current URL of the page. Choose icons from [Font Awesome](http://fontawesome.io/icons/)
 
 ### Unsplash Background Images
 - 'unsplash_client_id' => Get Unsplash client ID from [Unsplash](https://unsplash.com/developers)
