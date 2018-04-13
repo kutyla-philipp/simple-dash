@@ -7,6 +7,7 @@ This project uses:
 - jQuery
 - Bootstrap CSS
 - Mousetrap.js
+- Trianglify
 - Font Awesome
 - Unsplash
 
@@ -22,7 +23,7 @@ Copy the config.sample.json file and rename to config.json. Be sure to update th
 - 'items' => The menu will scale to the amount of items you want to display. Insert any link you'd like, or {{cur}} for the current URL of the page. Choose icons from [Font Awesome](http://fontawesome.io/icons/)
 
 ### Unsplash Background Images
-- 'unsplash_client_id' => Get Unsplash client ID from [Unsplash](https://unsplash.com/developers)
+- 'unsplash_client_id' => Get Unsplash client ID from [Unsplash](https://unsplash.com/developers) Leave this blank if you want to use Trianglify!
 - 'credits' => Whether you want to give credits to the artists, or not.
 
 ### Custom Background Images

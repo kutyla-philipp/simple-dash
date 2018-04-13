@@ -17,14 +17,15 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-	    <title><?= $config['title']; ?></title>
+		<title><?= $config['title']; ?></title>
 
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <link rel="stylesheet" type="text/css" href="hp_assets/css/font-awesome.min.css" />
-	    <link rel="stylesheet" type="text/css" href="hp_assets/css/bootstrap.min.css" />
-	    <link rel="stylesheet" type="text/css" href="hp_assets/css/main.css" />
-      <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="hp_assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="hp_assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="hp_assets/css/main.css" />
+		
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	</head>
 
 	<body id="homepage">
@@ -48,7 +49,6 @@
 				echo '</p></center>';
 			?>
 		</div>
-
 		<?php
 			if ($config['credits'] == true) {
 				echo '<div id="pic-info-wrap" class="menu-item hidden bg">';
@@ -57,12 +57,49 @@
 			}
 		?>
 
+		
 		<script type="text/javascript" src="hp_assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="hp_assets/js/mousetrap.min.js"></script>
 		<script type="text/javascript" src="hp_assets/js/main.js"></script>
 		
 		<script type="text/javascript">
 			setMenuVisibility(true);
+		</script>
+		
+		<script src="hp_assets/js/trianglify.min.js"></script>
+		<script>
+			function addTriangleTo(target) {
+				var dimensions = target.getClientRects()[0];
+				var pattern = Trianglify({
+					<?php
+						if ($config['unsplash_client_id'] != "") {
+							echo 'x_colors: \'Greys\',';
+							echo 'y_colors: \'match_x\',';
+						}
+					?>
+					width: dimensions.width,
+					height: dimensions.height
+				});
+				target.style['background-image'] = 'url(' + pattern.png() + ')';
+				target.style['background-size'] = 'cover';
+				target.style['-webkit-background-size'] = 'cover';
+				target.style['-moz-background-size'] = 'cover';
+				target.style['-o-background-size'] = 'cover';
+			}
+			
+			var resizeTimer;
+			$(window).on('resize', function(e) {
+			  clearTimeout(resizeTimer);
+			  resizeTimer = setTimeout(function() {
+				<?php
+					if ($config['unsplash_client_id'] == "") {
+						echo 'addTriangleTo(homepage)';
+					}
+				?>
+			  }, 400);
+			});
+			
+			addTriangleTo(homepage);
 		</script>
 	</body>
 </html>

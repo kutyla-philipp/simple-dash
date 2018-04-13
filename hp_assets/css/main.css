@@ -1,5 +1,5 @@
 html {height: 100%; width: 100%;}
-body {font-family: sans-serif; background: url("../img/sayagata-400px.png") repeat; z-index: 1; height: 100%; width: 100%; background-position: center; background-attachment: fixed;}
+body {font-family: sans-serif; z-index: 1; height: 100%; width: 100%; background-position: center; background-attachment: fixed;}
 
 .hidden {display: none;}
 .menu-item {display: none; z-index: 3;}
@@ -23,8 +23,15 @@ body.menu-shown #bg-overlay {opacity: 0.3;}
 #mobile-menu-wrap {z-index: 3; position: absolute; top: 15px; left: 15px;}
 #mobile-menu-wrap a {font-size: 20px;}
 
-.bg {border-radius: 5px; background-color: rgba(0, 0, 0, .5); padding: 20px;}
-.bg a {color: #fff;}
+.bg {
+	border-radius: 5px; 
+	background-color: rgba(0, 0, 0, .5); 
+	padding: 20px;
+}
+
+.bg a {
+	color: #fff;
+}
 
 #links-wrap {
 	font-size: 80px;
@@ -49,8 +56,8 @@ body.menu-shown #bg-overlay {opacity: 0.3;}
 #links-wrap a {transition: .3s all;}
 #links-wrap a:hover {color: #d3d3d3;}
 #links-wrap .link {display: inline-block; width: 33%; float: left; text-align: center;}
+#links-wrap::-webkit-scrollbar {width: 10px;	background-color: transparent;}
+#links-wrap::-webkit-scrollbar-thumb {border-radius: 10px; -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.4); background-color: rgba(255,255,255,.2);}
 
 #pic-info-wrap {color: #fff; font-size: 16px; position: absolute; bottom: 15px; left: 15px;}
 #pic-info-wrap a:hover, #pic-info-wrap a:active {color: #fff; text-decoration: none;}
-
-#clock-wrap {color: #fff; font-size: 30px; position: absolute; top: 15px; right: 15px;}
