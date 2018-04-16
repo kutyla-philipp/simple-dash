@@ -9,8 +9,8 @@ This project uses:
 - Trianglify
 
 ## Screenshots
-![Homepage Desktop](example_img/homepage-desktop.png?raw=true)
-![Homepage Mobile](example_img/homepage-mobile.png?raw=true)
+![Homepage Desktop](example_img/homepage-desktop.jpg?raw=true)
+![Homepage Mobile](example_img/homepage-mobile.jpg?raw=true)
 
 ## To Use
 Copy the config.sample.json file and rename to config.json. Be sure to update the fields as you see appropriate.
