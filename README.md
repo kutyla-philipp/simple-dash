@@ -6,15 +6,15 @@ Based on: https://github.com/thetomester13/homepage
 This project uses:
 - jQuery
 - Bootstrap CSS
-- Mousetrap.js
-- Trianglify
 - Font Awesome
 - Unsplash
+- Trianglify
 
 ## Screenshots
-![Homepage Desktop](example_img/homepage-desktop.png?raw=true)
-![Homepage Mobile](example_img/homepage-mobile.png?raw=true)
-![Homepage Desktop](example_img/homepage-desktop(with-credits).png?raw=true)
+![Homepage Desktop Trianglify](example_img/homepage-desktop-trianglify.png?raw=true)
+![Homepage Mobile Trianglify](example_img/homepage-mobile-trianglify.png?raw=true)
+![Homepage Desktop Unsplash](example_img/homepage-desktop-unsplash.png?raw=true)
+![Homepage Mobile Unsplash](example_img/homepage-mobile-unsplash.png?raw=true)
 
 ## To Use
 Copy the config.sample.json file and rename to config.json. Be sure to update the fields as you see appropriate. You have the option to use the Unsplash API to fetch background images, or use a custom URL and JSON selector. If you choose to use Unsplash, will need to create a developer profile at [Unsplash](https://unsplash.com/) to use the background image functionality properly. 

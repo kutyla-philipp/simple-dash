@@ -4,22 +4,22 @@
 	"custom_url" : "",
 	"custom_url_selector" : "",
 	"custom_url_headers" : [],
-	"unsplash_client_id" : "",
+	"unsplash_client_id" : "Make yourself an Unsplash Account here: https://unsplash.com/developers (Leave blank for Trianglify)",
 	"items" : [
 		{
-			"alt" : "Facebook",
-			"icon" : "fa-facebook",
-			"link" : "http://facebook.com"
+			"alt" : "Github",
+			"icon" : "fa-github",
+			"link" : "https://github.com/Swagielka"
 		},
 		{
 			"alt" : "Twitter",
 			"icon" : "fa-twitter",
-			"link" : "http://twitter.com"
+			"link" : "https://twitter.com/Kukielka_"
 		},
 		{
-			"alt" : "Trello",
-			"icon" : "fa-trello",
-			"link" : "http://trello.com"
+			"alt" : "Docker Hub",
+			"icon" : "fa-docker",
+			"link" : "https://hub.docker.com/u/kukielka/"
 		}
 	]
 }
