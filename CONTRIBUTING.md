@@ -1,6 +1,6 @@
-# Contributing to Homepage
+# Contributing to simple-dash
 
-Looking to contribute something to Homepage? **Here's how you can help.**
+Looking to contribute something to simple-dash? **Here's how you can help.**
 
 Please take a moment to review this document in order to make the contribution
 process easy and effective for everyone involved.
@@ -13,7 +13,7 @@ patches and features.
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/kukielka58/homepage/issues) is
+The [issue tracker](https://github.com/swagielka/simple-dash/issues) is
 the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
@@ -25,13 +25,13 @@ restrictions:
 
 Our bug tracker utilizes several labels to help organize and identify issues. Here's what they represent and how we use them:
 
-- `bug` - Issues for a potential bug in Homepage. 
+- `bug` - Issues for a potential bug in simple-dash. 
 - `docs` - Issues for improving or updating our documentation.
 - `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified.
 - `help wanted` - Issues we need or would love help from the community to resolve.
-- `question` - General purpose question about Homepage. 
+- `question` - General purpose question about simple-dash. 
 
-For a complete look at our labels, see the [project labels page](https://github.com/kukielka58/homepage/labels).
+For a complete look at our labels, see the [project labels page](https://github.com/swagielka/simple-dash/labels).
 
 
 ## Bug reports
@@ -112,11 +112,11 @@ included in the project:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/homepage.git
+   git clone https://github.com/<your-username>/simple-dash.git
    # Navigate to the newly cloned directory
-   cd homepage
+   cd simple-dash
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/kukielka58/homepage.git
+   git remote add upstream https://github.com/swagielka/simple-dash.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
