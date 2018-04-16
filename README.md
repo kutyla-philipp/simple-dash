@@ -1,6 +1,6 @@
-# simple-homepage
+# simple-dash
 
-An even simpler, fully responsive Homepage. Ideal for Desktop and mobile usage!
+A simple, fully responsive Dashboard to forward to the services of your choice! Ideal for Desktop and mobile usage!
 Based on: https://github.com/thetomester13/homepage
 
 This project uses:
