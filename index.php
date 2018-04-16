@@ -33,7 +33,7 @@
 					$icon = $item['icon'];
 					$link = str_replace("{{cur}}", get_current_url(), $item['link']);
 
-					echo '<a href="' . $link . '" title="' . $item['alt'] . '"><i class="fa ' . $icon . ' fa-fw"></i></a>';
+					echo '<a href="' . $link . '" title="' . $item['alt'] . '"><i class="' . $icon . ' fa-fw"></i></a>';
 				}
 			?>
 			</p></center>
