@@ -25,6 +25,7 @@
 	</head>
 
 	<body id="homepage">
+		<span class="fa fa-asterisk" style="opacity: 0;"></span>
 		<div id="links-wrap" class="menu-item bg">
 			<center><p>
 			<?php
@@ -47,6 +48,7 @@
 					width: dimensions.width,
 					height: dimensions.height
 				});
+
 				target.style['background-image'] = 'url(' + pattern.png() + ')';
 				target.style['background-size'] = 'cover';
 				target.style['-webkit-background-size'] = 'cover';
