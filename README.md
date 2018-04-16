@@ -1,6 +1,8 @@
 # simple-dash
 
 A simple, fully responsive Dashboard to forward to the services of your choice! Ideal for Desktop and mobile usage!
+Add all of your services, whether you host them yourself or not and display them as neat Icons from the FontAwesome libary.
+simple-dash is made to be as simple and minimalistic as possible. (The goal was to create a dashboard even my mom could use!) :)
 
 This project uses:
 - jQuery
