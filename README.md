@@ -11,8 +11,8 @@ This project uses:
 - Trianglify
 
 ## Screenshots
-![Homepage Desktop Trianglify](example_img/homepage-desktop-trianglify.png?raw=true)
-![Homepage Mobile Trianglify](example_img/homepage-mobile-trianglify.png?raw=true)
+![Homepage Desktop Trianglify](example_img/homepage-desktop-trianglify.jpg?raw=true)
+![Homepage Mobile Trianglify](example_img/homepage-mobile-trianglify.jpg?raw=true)
 ![Homepage Desktop Unsplash](example_img/homepage-desktop-unsplash.png?raw=true)
 ![Homepage Mobile Unsplash](example_img/homepage-mobile-unsplash.png?raw=true)
 
