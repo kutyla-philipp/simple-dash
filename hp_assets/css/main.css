@@ -35,6 +35,7 @@ body {
 	max-height: 85%;
 	overflow: auto;
 	display: flex;
+	overflow-y: scroll;
 }
 
 #links-wrap a {
