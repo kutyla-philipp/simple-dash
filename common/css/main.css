@@ -4,7 +4,6 @@ html {
 }
 
 body {
-	font-family: sans-serif; 
 	z-index: 1; 
 	height: 100%; 
 	width: 100%; 
@@ -12,17 +11,18 @@ body {
 	background-attachment: fixed;
 }
 
-.bg {
+.itemlist {
 	border-radius: 6px; 
 	background-color: rgba(0, 0, 0, .4); 
 	padding: 20px;
+	box-sizing: border-box;
 }
 
-.bg a {
+.itemlist a {
 	color: #fff;
 }
 
-#links-wrap {
+#wrapper {
 	font-size: 80px;
 	position: fixed;
 	left: 50%;
@@ -38,27 +38,27 @@ body {
 	overflow-y: scroll;
 }
 
-#links-wrap a {
+#wrapper a {
 	transition: .3s all;
 }
 
-#links-wrap a:hover {
+#wrapper a:hover {
 	color: #c4c4c4;
 }
 
-#links-wrap .link {
+#wrapper .link {
 	display: inline-block;
 	width: 33%;
 	float: left;
 	text-align: center;
 }
 
-#links-wrap::-webkit-scrollbar {
+#wrapper::-webkit-scrollbar {
 	width: 10px;
 	background-color: transparent;
 }
 
-#links-wrap::-webkit-scrollbar-thumb {
+#wrapper::-webkit-scrollbar-thumb {
 	border-radius: 6px;
 	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.4);
 	background-color: rgba(255,255,255,.2);

@@ -1,46 +1,35 @@
 <?php
 	session_start();
-
 	$config = json_decode(file_get_contents("config.json"), true);
-
-	function get_current_url() {
-		$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-		$domainName = $_SERVER['SERVER_NAME'];
-		return $protocol . $domainName;
-	}
 ?>
 
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title><?= $config['title']; ?></title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-		<link rel="stylesheet" type="text/css" href="hp_assets/css/fontawesome-all.min.css" />
-		<link rel="stylesheet" type="text/css" href="hp_assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="hp_assets/css/main.css" />
-		
-		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="common/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" type="text/css" href="common/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="common/css/main.css" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	</head>
 
 	<body id="homepage">
 		<span class="fa fa-asterisk" style="opacity: 0;"></span>
-		<div id="links-wrap" class="menu-item bg">
+		<div id="wrapper" class="itemlist">
 			<center><p>
 			<?php
 				foreach ($config['items'] as $i => $item) {
-					$icon = $item['icon'];
-					$link = str_replace("{{cur}}", get_current_url(), $item['link']);
-
-					echo '<a href="' . $link . '" title="' . $item['alt'] . '"><i class="' . $icon . ' fa-fw"></i></a>';
+					echo '<a href="'.$item['link'].'" title="'.$item['alt'].'"><i class="'.$item['icon'].' fa-fw"></i></a>';
 				}
 			?>
 			</p></center>
 		</div>
 		
-		<script type="text/javascript" src="hp_assets/js/jquery.min.js"></script>
-		<script src="hp_assets/js/trianglify.min.js"></script>
+		<script type="text/javascript" src="common/js/jquery.min.js"></script>
+		<script src="common/js/trianglify.min.js"></script>
 		<script>
 			function addTriangleTo(target) {
 				var dimensions = target.getClientRects()[0];
@@ -58,10 +47,10 @@
 			
 			var resizeTimer;
 			$(window).on('resize', function(e) {
-			clearTimeout(resizeTimer);
-			resizeTimer = setTimeout(function() {
-				<?php echo 'addTriangleTo(homepage)'; ?>
-			}, 400);
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(function() {
+					addTriangleTo(homepage);
+				}, 400);
 			});
 			
 			addTriangleTo(homepage);
