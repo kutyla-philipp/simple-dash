@@ -1,3 +1,4 @@
+[![Mentioned in Awesome-Selfhosted](https://awesome.re/mentioned-badge.svg)](https://github.com/Kickball/awesome-selfhosted#personal-dashboards)
 # simple-dash
 
 A simple, fully responsive Dashboard to forward to the services of your choice! Ideal for Desktop and mobile usage!
