@@ -17,14 +17,15 @@ body {
 }
 
 #wrapper {
-	text-align: center;
+	height: 100%;
+	display: grid;
 }
 .itemlist {
 	display: inline-grid;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 0.5em 0;
+	margin: auto;
 }
-@media only screen and (min-width: 600px) and (max-width: 799px) {
+@media only screen and (min-width: 600px) {
 	.itemlist {
 		grid-template-columns: repeat(3, 1fr);
 	}
