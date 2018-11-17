@@ -1,12 +1,7 @@
-<?php
-	session_start();
-	$config = json_decode(file_get_contents("config.json"), true);
-?>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title><?= $config['title']; ?></title>
+		<title>Loading...</title>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="common/css/fontawesome-all.min.css" />
@@ -23,16 +18,35 @@
 
 		<div id="wrapper">
 			<div id="itemlist">
-				<?php
-					foreach ($config['items'] as $i => $item) {
-						echo '<a href="'.$item['link'].'" title="'.$item['alt'].'"><i class="'.$item['icon'].' fa-fw"></i></a>';
-					}
-				?>
+				<a title="Loading..."><i class="fa-spin fas fa-spinner fa-fw"></i></a>
 			</div>
 		</div>
 
 		<script src="common/js/trianglify.min.js"></script>
 		<script>
+			var request = new XMLHttpRequest();
+			request.overrideMimeType("application/json");
+			request.open("GET", 'config.json');
+			request.onload = function () {
+				if (request.status >= 200 && request.status < 400) {
+					var config = JSON.parse(this.response);
+					console.log(config);
+					document.title = config.title;
+
+					var itemlistHTML = '';
+					for (var i = 0; i < config.items.length; i++) {
+						var item = config.items[i];
+						itemlistHTML += '<a href="'+item.link+'" title="'+item.alt+'"><i class="'+item.icon+' fa-fw"></i></a>';
+					}
+					document.getElementById("itemlist").innerHTML = itemlistHTML;
+				} else {
+					var error_text = "Error: "+request.status;
+					console.error(error_text);
+					document.title = error_text;
+				}
+			}
+			request.send(null);
+
 			function addTriangleTo(target) {
 				var dimensions = target.getClientRects()[0];
 				var pattern = Trianglify({
