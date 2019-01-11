@@ -1,7 +1,7 @@
 [![Mentioned in Awesome-Selfhosted](https://awesome.re/mentioned-badge.svg)](https://github.com/Kickball/awesome-selfhosted#personal-dashboards)
 # simple-dash
 
-Try the Demo here: http://simple-dash-demo.bplaced.net/
+Try the Demo here: https://swagielka.github.io/simple-dash/
 
 A simple, fully responsive Dashboard to forward to the services of your choice! Ideal for Desktop and mobile usage!
 Add all of your services, whether you host them yourself or not and display them as neat Icons from the FontAwesome libary.
