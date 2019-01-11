@@ -9,8 +9,6 @@ simple-dash is made to be as simple and minimalistic as possible. (The goal was 
 Based on: https://github.com/thetomester13/homepage
 
 This project uses:
-- jQuery
-- Bootstrap CSS
 - Font Awesome
 - Trianglify
 
