@@ -13,7 +13,7 @@ patches and features.
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/swagielka/simple-dash/issues) is
+The [issue tracker](https://github.com/kutyla-philipp/simple-dash/issues) is
 the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
@@ -31,7 +31,7 @@ Our bug tracker utilizes several labels to help organize and identify issues. He
 - `help wanted` - Issues we need or would love help from the community to resolve.
 - `question` - General purpose question about simple-dash. 
 
-For a complete look at our labels, see the [project labels page](https://github.com/swagielka/simple-dash/labels).
+For a complete look at our labels, see the [project labels page](https://github.com/kutyla-philipp/simple-dash/labels).
 
 
 ## Bug reports
@@ -116,7 +116,7 @@ included in the project:
    # Navigate to the newly cloned directory
    cd simple-dash
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/swagielka/simple-dash.git
+   git remote add upstream https://github.com/kutyla-philipp/simple-dash.git
    ```
 
 2. If you cloned a while ago, get the latest changes from upstream:
