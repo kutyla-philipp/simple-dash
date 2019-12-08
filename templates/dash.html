@@ -5,7 +5,8 @@
 	<title>Loading...</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 
 	<style>
 		html,
@@ -126,35 +127,14 @@
 
 	<div id="wrapper">
 		<div id="itemlist">
-			<a title="Loading..."><i class="fa-spin fas fa-spinner fa-fw"></i></a>
+			{{range .Items}}
+				<a href="{{.Link}}" title="{{.Name}}"><i class="{{.Icon}} fa-fw"></i></a>
+			{{end}}
 		</div>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
 	<script>
-		var request = new XMLHttpRequest();
-		request.overrideMimeType("application/json");
-		request.open("GET", 'config.json');
-		request.onload = function () {
-			if (request.status >= 200 && request.status < 400) {
-				var config = JSON.parse(this.response);
-				console.log(config);
-				document.title = config.title;
-
-				var itemlistHTML = '';
-				for (var i = 0; i < config.items.length; i++) {
-					var item = config.items[i];
-					itemlistHTML += '<a href="' + item.link + '" title="' + item.alt + '"><i class="' + item.icon + ' fa-fw"></i></a>';
-				}
-				document.getElementById("itemlist").innerHTML = itemlistHTML;
-			} else {
-				var error_text = "Error: " + request.status;
-				console.error(error_text);
-				document.title = error_text;
-			}
-		}
-		request.send(null);
-
 		function addTriangleTo(target) {
 			var dimensions = target.getClientRects()[0];
 			var pattern = Trianglify({

@@ -2,8 +2,10 @@ package main
 
 import (
 	"encoding/json"
+	"html/template"
 	"io/ioutil"
 	"log"
+	"net/http"
 	"os"
 )
 
@@ -40,7 +42,10 @@ func parseConfig() *DashData {
 func main() {
 	log.Println("Starting Simple Dash")
 
+	dashTemplate := template.Must(template.ParseFiles("templates/dash.html"))
 	data := parseConfig()
-
-	log.Printf("Data Title: %s\n", data.Title)
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		dashTemplate.Execute(w, data)
+	})
+	http.ListenAndServe(":80", nil)
 }
