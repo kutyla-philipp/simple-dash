@@ -2,7 +2,7 @@ FROM golang:alpine as builder
 
 WORKDIR /go/src/github.com/willfantom/simple-dash
 COPY ./. .
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
+RUN CGO_ENABLED=0 go build -a -o main .
 
 FROM scratch
 
