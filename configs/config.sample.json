@@ -1,5 +1,5 @@
 {
-	"title" : "Your Homepage Title",
+	"title" : "Simple Dash",
 	"items" : [
 		{
 			"alt" : "Github",
@@ -16,5 +16,6 @@
 			"icon" : "fab fa-docker",
 			"link" : "https://hub.docker.com/u/kukielka/"
 		}
-	]
+	],
+	"adminpass": "pass"
 }
