@@ -19,5 +19,13 @@ This project uses:
 ## To Use
 Copy the config.sample.json file and rename to config.json. Be sure to update the fields as you see appropriate.
 
+### On Docker
+
+This project can run atop the docker engine. To run, simply create a config JSON based of the `configs/config.sample.json` provided. Then, simply navigate to the dir that contains the config and run the image like so:
+
+```bash
+docker run --rm -p 8080:80 -v $(pwd)/:/config willfantom/simple-dash:latest
+```
+
 ## Configure Homepage
 - 'items' => The menu will scale to the amount of items you want to display. Insert any link you'd like, or {{cur}} for the current URL of the page. Choose icons from [Font Awesome](http://fontawesome.io/icons/)
