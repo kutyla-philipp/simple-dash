@@ -19,5 +19,14 @@ This project uses:
 ## To Use
 Copy the config.sample.json file and rename to config.json. Be sure to update the fields as you see appropriate.
 
+## Docker
+
+Docker images based on nginx are pushed to docker hub as
+[olifant/simple-dash](https://hub.docker.com/r/olifant/simple-dash). Run the container by mounting a config file from
+the host  and expose the necessary ports.
+
+    $ docker pull olifant/simple-dash:latest
+    $ docker run -p 8080:80 -v $(pwd)/config.json:/usr/share/nginx/html/config.json olifant/simple-dash:latest
+
 ## Configure Homepage
 - 'items' => The menu will scale to the amount of items you want to display. Insert any link you'd like, or {{cur}} for the current URL of the page. Choose icons from [Font Awesome](http://fontawesome.io/icons/)
